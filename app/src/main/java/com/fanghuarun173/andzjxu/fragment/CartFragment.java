@@ -1,9 +1,9 @@
-package com.fanghuarun173.test3.fragment;
+package com.fanghuarun173.andzjxu.fragment;
 
 import android.view.View;
 
-import com.fanghuarun173.test3.R;
-import com.fanghuarun173.test3.common.BaseFragment;
+import com.fanghuarun173.andzjxu.R;
+import com.fanghuarun173.andzjxu.common.BaseFragment;
 
 public class CartFragment extends BaseFragment {
     @Override

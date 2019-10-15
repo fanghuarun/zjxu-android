@@ -1,7 +1,5 @@
-package com.fanghuarun173.test3.common;
+package com.fanghuarun173.andzjxu.common;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;

@@ -1,14 +1,12 @@
-package com.fanghuarun173.test3.fragment;
+package com.fanghuarun173.andzjxu.fragment;
 
-import android.media.Image;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.widget.ImageButton;
 
-import com.fanghuarun173.test3.R;
-import com.fanghuarun173.test3.common.BaseFragment;
+import com.fanghuarun173.andzjxu.R;
+import com.fanghuarun173.andzjxu.common.BaseFragment;
 
 public class NavigationFragment extends BaseFragment implements View.OnClickListener{
     private ImageButton mIbHome;

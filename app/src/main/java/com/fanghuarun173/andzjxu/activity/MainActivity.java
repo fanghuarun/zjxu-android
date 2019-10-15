@@ -1,14 +1,12 @@
-package com.fanghuarun173.test3;
+package com.fanghuarun173.andzjxu.activity;
 
 import android.support.annotation.LayoutRes;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-import com.fanghuarun173.test3.common.BaseActivity;
-import com.fanghuarun173.test3.common.BaseFragment;
-import com.fanghuarun173.test3.fragment.NavigationFragment;
+import com.fanghuarun173.andzjxu.R;
+import com.fanghuarun173.andzjxu.common.BaseActivity;
+import com.fanghuarun173.andzjxu.fragment.NavigationFragment;
 
 public class MainActivity extends BaseActivity {
 
