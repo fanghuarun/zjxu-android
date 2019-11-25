@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">fanghuarun-test3</string>
+    <string name="app_name">fanghuarun</string>
+    <string name="login">登录界面</string>
+    <string name="fanghuarun">方华润</string>
 </resources>

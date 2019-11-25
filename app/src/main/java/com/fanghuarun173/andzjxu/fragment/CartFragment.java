@@ -1,23 +1,46 @@
 package com.fanghuarun173.andzjxu.fragment;
 
+import android.os.Bundle;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ProgressBar;
+import android.widget.ToggleButton;
 
 import com.fanghuarun173.andzjxu.R;
 import com.fanghuarun173.andzjxu.common.BaseFragment;
 
 public class CartFragment extends BaseFragment {
-    @Override
-    protected void initView(View view) {
+    public int getContentViewId(){return R.layout.fragment_cart;}
 
+    private View view;
+    private ProgressBar pro1;
+    private ToggleButton btn;
+    @Nullable
+    @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        view = inflater.inflate(R.layout.fragment_cart, null);
+        btn =(ToggleButton) view.findViewById(R.id.button_cart1);
+        pro1 =(ProgressBar)view.findViewById(R.id.progress_cart1);
+        return view;
     }
 
+    //实现点击事件
     @Override
-    protected void initData() {
-
-    }
-
-    @Override
-    public int getContentViewId() {
-        return R.layout.fragment_cart;
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean checked = btn.isChecked();
+                if (checked) {
+                    pro1.setVisibility(ProgressBar.GONE);
+                } else {
+                    pro1.setVisibility(ProgressBar.VISIBLE);
+                }
+            }
+        });
     }
 }
